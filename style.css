@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+ ul {
+    list-style:none;
+ }
+ a {
+    display: block;
+    color:#000;
+    text-decoration: none;
+ }
+
+ /*common*/
+ #wrap {
+   width:100%;
+   height:100vh;
+ }
+ header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width:100%;
+   height:10vh;
+   padding: 3vh;
+   background: linear-gradient(180deg, rgb(162, 189, 199), rgb(248, 237, 163));
+ }
+ header a {
+   font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size:25pt;
+   color: #f1f1f1;
+ }
+ h1 {
+   font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50pt;
+   color: #f1f1f1;
+ }
+ #gnb {
+   color: #f1f1f1;
+ }
+ #container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ /*homepage*/
+ .img-wrapper {
+   display: flex;
+   justify-items: center;
+   align-items: center;
+ }
+ .memo {
+   width:300px;
+   height:auto;
+   margin: 2vh 2vw;
+ }
+ #btn-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .btn-to-mommy {
+   width: 80px;
+   height: 30px;
+   background: rgb(162, 189, 199);
+   border-radius:5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: #f1f1f1;
+   margin: 1vh 6vw;
+   font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ }
+ .btn-to-daddy {
+   width: 80px;
+   height: 30px;
+   background: rgb(162, 189, 199);
+   border-radius:5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: #f1f1f1;
+   margin: 1vh 6vw;
+   font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ }
+
+ /*to*/
+ #container2 {
+   width:100vw;
+   height:90vh;
+   background: rgb(162, 189, 199);
+   display: flex;
+ }
+ .letter {
+   width: 500px;
+   height: 90vh;
+   background-color: white;
+   text-align: left;
+   word-break: keep-all;
+   line-height: 1.7;
+   font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+   overflow: hidden;
+   padding:30px;
+ }
+ .letter-heart {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  padding: 3vh 0;
+ }
+ marquee {
+   font-size: 35pt;
+   font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+   color:rgb(183, 255, 220);
+ }
+ .fortune-wrap {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   flex:1;
+ }
+ .fortune-cookie {
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2vw;
+
+ }
+ .choose {
+   display: block;
+   text-align: center;
+   font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+   
+ }
+ .clover {
+   width: 300px;
+   height:auto;
+ }
+ .cookie-card {
+   position: relative;
+   display: inline-block;
+   margin: 0 20px;
+ }
+ 
+ .cookie-memo {
+   display: none;
+   position: absolute;
+   top: 100%; /* 이미지 바로 아래 */
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: rgb(179, 255, 212);
+   color: #2f2f2f;
+   padding: 10px;
+   border-radius: 10px;
+   width: max-content;
+   max-width: 200px;
+   text-align: center;
+   white-space: normal;
+   z-index: 10;
+   word-break: keep-all;
+   font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.7;
+ }
+ 
+ .cookie-card:hover .cookie-memo {
+   display: block;
+ }
